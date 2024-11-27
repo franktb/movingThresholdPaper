@@ -98,7 +98,7 @@ green_bar, = axs[1,1].plot(rawT[3:], np.gradient(mya * rawT[3:] + myb,rawT[3:]),
 
 
 
-data = np.loadtxt("out_CRC.txt", delimiter=" ")
+data = np.loadtxt("out_strict_exclude_5_10.txt", delimiter=" ")
 traj = data.shape[0]
 unique, counts = np.unique(np.array(data).ravel(), return_counts=True)
 
